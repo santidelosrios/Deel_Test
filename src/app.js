@@ -3,10 +3,10 @@ const bodyParser = require('body-parser')
 
 const { sequelize } = require('./model')
 const { getProfile } = require('./middleware/getProfile')
-const { getContractById, getContracts } = require('./service/contracts')
-const { getUnPaidJobs, pay } = require('./service/jobs')
-const { deposit } = require('./service/balances')
-const { getBestProfession, getBestClients } = require('./service/admin')
+const { getContractById, getContracts } = require('./services/contracts')
+const { getUnPaidJobs, pay } = require('./services/jobs')
+const { deposit } = require('./services/balances')
+const { getBestProfession, getBestClients } = require('./services/admin')
 
 const app = express();
 
